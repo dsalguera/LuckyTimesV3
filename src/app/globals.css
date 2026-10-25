@@ -278,3 +278,9 @@ html[data-theme="light"] .app-shell .filter-box:focus-within{border-color:#428bb
 html[data-theme="light"] .lt-step-locked{background:#f0f4fa!important;border-color:#c5d2e3!important}
 html[data-theme="light"] .lt-step-locked .lt-step-fieldset{opacity:.68}
 @media(max-width:950px){.sidebar-is-collapsed .sidebar{width:245px!important}.sidebar-is-collapsed .sidebar .brand>div,.sidebar-is-collapsed .sidebar .sidebar-profile-details,.sidebar-is-collapsed .sidebar .sidebar-profile-indicator,.sidebar-is-collapsed .sidebar .nav-item span{display:initial!important}.sidebar-is-collapsed .sidebar .nav-item{justify-content:flex-start;padding:0 15px;gap:14px}}
+
+/* V9.2 — Modern Ball brand and role avatar */
+.sidebar .brand-mark{width:49px;height:49px;object-fit:contain;filter:drop-shadow(0 0 8px #ffbc4b42)}
+.sidebar .sidebar-profile-avatar{width:42px!important;height:42px!important;object-fit:cover;border-radius:50%;background:#11254d;box-shadow:0 0 0 2px #4b9ef055,0 4px 12px #0002!important}
+.sidebar-is-collapsed .sidebar .brand-mark{width:44px;height:44px}
+html[data-theme="light"] .sidebar .brand-mark{filter:drop-shadow(0 2px 5px #2c518c22)}
