@@ -115,3 +115,38 @@ tbody tr:nth-child(even){background:#34345136}tbody tr:hover{background:#34396b7
 @media(max-width:950px){.sidebar{box-shadow:18px 0 45px #0008}.main-content{padding:15px 16px 28px}}
 @media(max-width:650px){.overview-hero,.hero{border-radius:18px!important}.overview-stat,.overview-feature,.overview-side,.panel{border-radius:16px!important}.main-content{padding:12px 12px 26px}.nav-item{height:48px}}
 @media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}}
+
+/* V8.5 — Dashboard Midnight Premium: faithful to approved reference screenshot.
+   Scoped to overview and app chrome; other V8.4 screens retain their styling. */
+.app-shell{--bg:#0b1020;background:#0b1020;color:#f5f5fa}
+.sidebar{background:linear-gradient(180deg,#101329 0%,#0c1427 100%);border-right:1px solid #28304c;box-shadow:none}
+.brand strong span{color:#ffcf54}.brand-flower{color:#ffca42;text-shadow:3px 2px #3dc786}
+.sidebar-profile{background:linear-gradient(115deg,#28294e,#182640);border:1px solid #59517d;box-shadow:none}
+.nav-item.selected{background:linear-gradient(90deg,#45346e,#2b2a54);border-color:#8871b7;box-shadow:inset 3px 0 #ffdb61}.nav-item.selected svg{color:#ffd75c}
+.workspace{background:radial-gradient(ellipse 70% 40% at 78% 0%,#201b463b,transparent),#0b1020}
+.main-content{max-width:1900px;padding:23px 27px 35px}
+.overview-hero{min-height:373px;border:1px solid #534373!important;border-radius:23px!important;background:#191534;box-shadow:0 18px 55px #0003!important}
+.overview-hero .hero-photo{object-position:center 53%}
+.overview-hero-shade{background:linear-gradient(90deg,rgba(18,14,44,.97) 0%,rgba(29,18,61,.92) 37%,rgba(35,19,62,.38) 77%,rgba(27,16,55,.25)),linear-gradient(0deg,#100d2b55,transparent 65%)!important}
+.overview-hero-copy{padding:43px 46px;max-width:680px}
+.overview-hero h1{font-size:clamp(36px,3.35vw,51px);letter-spacing:-2px}
+.overview-hero h1 em{color:#ffbe70}
+.overview-hero .hero-kicker{background:#4a2d5d80;border-color:#9470a870;color:#ffdbac}
+.overview-hero .gold-button{background:linear-gradient(90deg,#ffe971,#ffc344)!important;border-radius:11px!important;box-shadow:0 5px 18px #ffbd4d33!important}
+.overview-hero .hero-secondary{background:#ffffff15;border-color:#ffffff30}
+.overview-heading{margin:30px 0 19px}
+.overview-heading h2{font-size:24px}
+.overview-page .overview-stat,.overview-page .overview-feature,.overview-page .overview-side{background:linear-gradient(145deg,#1d2440,#171d34)!important;border:1px solid #343855!important;border-radius:18px!important;box-shadow:inset 0 1px #ffffff09,0 10px 26px #0002!important}
+.overview-page .overview-stat{padding:20px;transition:transform .2s,border-color .2s}
+.overview-page .overview-stat:before{height:2px;background:linear-gradient(90deg,#7c8dff,#a67cf1,#efba72);opacity:.75}
+.overview-page .overview-stat:hover{border-color:#7770a6!important;transform:translateY(-2px)}
+.overview-page .overview-stat-value{font-size:37px;letter-spacing:-1px}
+.overview-page .overview-stat-icon{box-shadow:none}
+.overview-page .overview-feature,.overview-page .overview-side{padding:24px}
+.overview-page .overview-shortcut{background:#1b223d;border:1px solid #3a4160;border-radius:13px;transform:none}
+.overview-page .overview-shortcut:hover{background:#292f51;border-color:#7d69a8;transform:none}
+.overview-page .shortcut-icon{background:#594c9238;color:#b9a4ff}
+.overview-page .overview-side-line{border-color:#344059}
+.overview-page .outline-button{background:#292947;border:1px solid #665b88;color:#e9e6f4}
+@media(max-width:950px){.main-content{padding:15px 16px 28px}}
+@media(max-width:650px){.main-content{padding:12px 12px 26px}.overview-hero{min-height:365px;border-radius:18px!important}.overview-hero-copy{padding:28px 22px}.overview-page .overview-stat,.overview-page .overview-feature,.overview-page .overview-side{border-radius:16px!important}.overview-page .overview-feature,.overview-page .overview-side{padding:18px}}
