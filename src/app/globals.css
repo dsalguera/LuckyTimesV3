@@ -247,3 +247,34 @@ html[data-theme="light"] .app-shell .neon-home .neon-welcome h2 span{color:#ffe1
 /* Search is one focusable visual control, not two nested frames. */
 .filter-box input:focus-visible,.top-search input:focus-visible{outline:0!important;box-shadow:none!important;}
 .filter-box:focus-within,.top-search:focus-within{border-color:#4eb6e4;box-shadow:0 0 0 3px #48b9e525;}
+
+/* LuckyTimes V9.1 — single-outline search, accessible gated steps, compact navigation */
+.app-shell .filter-box{display:flex;align-items:center;gap:12px;min-height:46px;padding:0 14px!important;border:1px solid var(--line,#46516e);border-radius:13px;box-shadow:none!important;outline:none!important;max-width:420px;width:100%;}
+.app-shell .filter-box input,.app-shell .filter-box input:focus,.app-shell .filter-box input:focus-visible{display:block;flex:1;width:100%;min-width:0;padding:0!important;margin:0!important;border:0!important;border-radius:0!important;outline:0!important;box-shadow:none!important;background:transparent!important;color:var(--text)!important;appearance:none;-webkit-appearance:none;}
+.app-shell .filter-box:focus-within{border-color:#55b8ed!important;box-shadow:0 0 0 2px #55b8ed22!important;}
+html[data-theme="light"] .app-shell .filter-box{background:#fff!important;border-color:#cbd7e7!important;box-shadow:none!important;}
+html[data-theme="light"] .app-shell .filter-box input{color:#26354d!important;}
+html[data-theme="light"] .app-shell .filter-box:focus-within{border-color:#428bb7!important;box-shadow:0 0 0 2px #428bb71d!important;}
+.brand{gap:8px;position:relative;padding-right:8px;}
+.brand-mark{width:42px;height:42px;flex:none;filter:drop-shadow(0 2px 8px #25b9df32)}
+.sidebar-collapse-button{margin-left:auto;display:grid;place-items:center;flex:none;width:29px;height:29px;border:1px solid #6c719c55;border-radius:9px;color:#bac5e5;background:#2026418a;transition:background .2s}
+.sidebar-collapse-button:hover{background:#354567}
+.sidebar-profile-avatar{width:40px!important;height:40px!important;border-radius:50%!important;object-fit:cover;box-shadow:0 0 0 2px #8acbff55,0 4px 12px #0002!important}
+.sidebar-is-collapsed .sidebar{width:78px!important;transition:width .2s}
+.sidebar-is-collapsed .sidebar .brand{padding:20px 12px;flex-wrap:wrap;justify-content:center}
+.sidebar-is-collapsed .sidebar .brand>div,.sidebar-is-collapsed .sidebar .sidebar-profile-details,.sidebar-is-collapsed .sidebar .sidebar-profile-indicator,.sidebar-is-collapsed .sidebar .nav-item span{display:none!important}
+.sidebar-is-collapsed .sidebar .sidebar-collapse-button{margin:4px auto 0}
+.sidebar-is-collapsed .sidebar .sidebar-profile{padding:10px 5px;justify-content:center;margin:0 8px 18px}
+.sidebar-is-collapsed .sidebar nav{padding:0 8px}
+.sidebar-is-collapsed .sidebar .nav-item{justify-content:center;padding:0;gap:0}
+.sidebar-is-collapsed .sidebar .lt-preferences{flex-direction:column;align-items:center}
+.sidebar-is-collapsed .sidebar .lt-pref-btn{font-size:0;min-width:0}
+.lt-step-fieldset{border:0;margin:0;padding:0;min-width:0;display:block}
+.lt-step-gated{position:relative;transition:opacity .2s,border-color .2s}
+.lt-step-locked{opacity:.63;border-style:dashed!important}
+.lt-step-locked .lt-step-fieldset{pointer-events:none;user-select:none}
+.lt-step-locked .lt-card-heading{opacity:1}
+.lt-step-locked .lt-step-fieldset :is(input,textarea,select,button){cursor:not-allowed!important}
+html[data-theme="light"] .lt-step-locked{background:#f0f4fa!important;border-color:#c5d2e3!important}
+html[data-theme="light"] .lt-step-locked .lt-step-fieldset{opacity:.68}
+@media(max-width:950px){.sidebar-is-collapsed .sidebar{width:245px!important}.sidebar-is-collapsed .sidebar .brand>div,.sidebar-is-collapsed .sidebar .sidebar-profile-details,.sidebar-is-collapsed .sidebar .sidebar-profile-indicator,.sidebar-is-collapsed .sidebar .nav-item span{display:initial!important}.sidebar-is-collapsed .sidebar .nav-item{justify-content:flex-start;padding:0 15px;gap:14px}}
