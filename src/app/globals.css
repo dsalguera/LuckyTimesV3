@@ -132,3 +132,37 @@ tbody tr:nth-child(even){background:#34345136}tbody tr:hover{background:#34396b7
 .neon-chart-card{position:relative}.neon-chart-empty{position:absolute;left:95px;right:25px;top:49%;display:flex;align-items:center;justify-content:center;gap:9px;color:#b3c8e9;font-size:11px;text-align:center;pointer-events:none;text-shadow:0 2px 8px #060a1e}.neon-chart-empty svg{color:#45c7ff;filter:drop-shadow(0 0 7px #45c7ff7d)}
 .app-shell:has(.neon-home) .sidebar-profile{box-shadow:6px 7px 13px #03071aa6,-3px -3px 12px #5353a024,inset 1px 1px #ffffff30}.app-shell:has(.neon-home) .nav-item.selected{box-shadow:inset 3px 0 #ffe247,0 0 17px #7b49db35,inset 0 1px #bca2ff39}
 @media(max-width:950px){.neon-home .neon-welcome{padding:26px 24px;min-height:0}}@media(max-width:690px){.neon-home .neon-welcome{padding:22px 18px}.neon-chart-empty{left:70px;right:10px;top:55%;font-size:10px}.neon-hero-buttons button{flex:1;justify-content:center}}@media(prefers-reduced-motion:reduce){.neon-home .neon-kpi:hover,.neon-hero-buttons button:hover{transform:none}}
+
+
+/* V8.7 — theme controls and cross-module light palette */
+.lt-preferences{display:flex;gap:8px;padding:7px 12px 13px}
+.lt-pref-btn{display:inline-flex;align-items:center;justify-content:center;gap:7px;flex:1;min-height:34px;border:1px solid #5d5983;border-radius:11px;background:linear-gradient(145deg,#27244b,#161a36);color:#e8e8ff;font-size:11px;font-weight:800;cursor:pointer;box-shadow:4px 5px 10px #05081c88,inset 1px 1px #ffffff1a}
+.lt-pref-btn:hover{border-color:#a79af8;box-shadow:0 0 15px #8975ff55}
+:root[data-theme="light"]{color-scheme:light;--lt-light-bg:#edf1fa;--lt-light-surface:#ffffff;--lt-light-ink:#202a46;--lt-light-muted:#60708d}
+html[data-theme="light"] body,html[data-theme="light"] .app-shell,html[data-theme="light"] .workspace,html[data-theme="light"] .main-content{background:#edf1fa!important;color:#202a46!important}
+html[data-theme="light"] .sidebar{background:linear-gradient(160deg,#f7f8ff,#e5eaf7)!important;border-color:#d7dced!important;color:#202a46!important}
+html[data-theme="light"] .sidebar .brand strong,html[data-theme="light"] .sidebar .nav-item,html[data-theme="light"] .sidebar-profile,html[data-theme="light"] .sidebar-profile b{color:#263050!important}
+html[data-theme="light"] .sidebar .brand small,html[data-theme="light"] .sidebar-profile small{color:#67748e!important}
+html[data-theme="light"] .sidebar-profile,html[data-theme="light"] .nav-item.selected{background:linear-gradient(135deg,#ffffff,#e7e7fa)!important;border-color:#c7bee7!important;box-shadow:5px 6px 13px #b7bed077,-3px -3px 10px #fff!important}
+html[data-theme="light"] .nav-item.selected{color:#6541b7!important}
+html[data-theme="light"] .lt-pref-btn{background:linear-gradient(145deg,#fff,#e8ecf8);color:#29375c;border-color:#ccd4e7;box-shadow:4px 5px 9px #b8c3d075,inset 1px 1px #fff}
+html[data-theme="light"] .neon-home .neon-welcome{background:linear-gradient(90deg,#252047f0 0%,#241e47c9 44%,#17132975 100%),url('/images/lottery-banner.jpg') 67% 48%/cover!important;color:#fff!important}
+html[data-theme="light"] .neon-home .neon-kpi,html[data-theme="light"] .neon-home .neon-card,html[data-theme="light"] .panel,html[data-theme="light"] .lt-card,html[data-theme="light"] .crud-modal{background:linear-gradient(145deg,#ffffff,#f0f3fc)!important;border:1px solid #d3d9eb!important;box-shadow:7px 9px 19px #b3bed06b,-6px -6px 15px #fff,inset 1px 1px #fff!important;color:#253252!important}
+html[data-theme="light"] .neon-home .neon-kpi strong,html[data-theme="light"] .neon-home .neon-kpi small,html[data-theme="light"] .neon-home .neon-card h3,html[data-theme="light"] .module-heading h1,html[data-theme="light"] .panel h3,html[data-theme="light"] .crud-modal h2{color:#1e2945!important}
+html[data-theme="light"] .neon-home .neon-card p,html[data-theme="light"] .neon-home .neon-kpi-foot,html[data-theme="light"] .module-heading p,html[data-theme="light"] .panel small,html[data-theme="light"] .neon-empty{color:#64718b!important}
+html[data-theme="light"] .neon-home .neon-status-circle>div{background:linear-gradient(140deg,#f7faff,#e4eaf7)!important;color:#24304e!important;box-shadow:inset 4px 5px 12px #aebad08c,inset -3px -3px 9px #fff!important}
+html[data-theme="light"] .neon-home .neon-status-circle strong{color:#202a46!important}
+html[data-theme="light"] .crud-page{color:#263252!important}
+html[data-theme="light"] .crud-page table,html[data-theme="light"] .crud-page td,html[data-theme="light"] .crud-page th{color:#283655!important;border-color:#d9e0ee!important}
+html[data-theme="light"] .crud-page th{background:#e9eef8!important}
+html[data-theme="light"] .crud-page tr:hover td{background:#f0f3fc!important}
+html[data-theme="light"] .crud-page input,html[data-theme="light"] .crud-page select,html[data-theme="light"] .crud-page textarea,html[data-theme="light"] .crud-page input[style],html[data-theme="light"] .crud-page select[style]{background:#f9fbff!important;color:#1d2c48!important;border-color:#cbd5e8!important}
+html[data-theme="light"] .crud-page label,html[data-theme="light"] .crud-page label[style]{color:#344563!important}
+html[data-theme="light"] .outline-button,html[data-theme="light"] .neon-small-button{background:#f4f6fc!important;color:#33456c!important;border-color:#c8d3e7!important}
+html[data-theme="light"] .neon-chip{background:#edf3fc!important;color:#33456c!important;border-color:#d2ddec!important}
+html[data-theme="light"] .lt-tabs button:not(.active),html[data-theme="light"] .lt-draw-list button:not(.chosen){background:#f2f5fc!important;color:#273655!important;border-color:#cbd6e9!important}
+html[data-theme="light"] .neon-chart-empty,html[data-theme="light"] .neon-activity-empty{color:#526785!important}
+html[data-theme="light"] .neon-activity-empty b{color:#253252!important}
+html[data-theme="light"] .neon-activity-row,html[data-theme="light"] .neon-card-head{border-color:#dbe2ef!important}
+html[data-theme="light"] .topbar{background:#edf1fa!important}
+@media(max-width:780px){.lt-preferences{padding:5px 12px 12px}}
