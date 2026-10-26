@@ -284,3 +284,12 @@ html[data-theme="light"] .lt-step-locked .lt-step-fieldset{opacity:.68}
 .sidebar .sidebar-profile-avatar{width:42px!important;height:42px!important;object-fit:cover;border-radius:50%;background:#11254d;box-shadow:0 0 0 2px #4b9ef055,0 4px 12px #0002!important}
 .sidebar-is-collapsed .sidebar .brand-mark{width:44px;height:44px}
 html[data-theme="light"] .sidebar .brand-mark{filter:drop-shadow(0 2px 5px #2c518c22)}
+
+/* Logo only: PNG centered in sidebar, no duplicated wordmark. */
+.sidebar .brand{display:flex;align-items:center;justify-content:center;min-height:108px;padding:20px 40px 18px 18px;position:relative}
+.sidebar .brand .brand-mark{display:block;width:112px;height:85px;max-width:100%;object-fit:contain;flex:0 1 auto;filter:none}
+.sidebar .brand .sidebar-collapse-button{position:absolute;right:6px;top:50%;transform:translateY(-50%)}
+.sidebar-is-collapsed .sidebar .brand{min-height:86px;padding:16px 6px}
+.sidebar-is-collapsed .sidebar .brand .brand-mark{width:54px;height:54px}
+.sidebar-is-collapsed .sidebar .brand .sidebar-collapse-button{right:0;top:7px;transform:none}
+html[data-theme="light"] .sidebar .brand .brand-mark{filter:none}
